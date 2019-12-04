@@ -1,0 +1,102 @@
+{
+  "keikat": [
+    {
+      "id": 0,
+      "artist": "Metallica",
+      "eventname": "Puustock",
+      "img": "random.url",
+      "description": "Dumb",
+      "date" : "10-23-2019",
+      "time": "15:30",
+      "adress": "ratina",
+      "location": "Orivesi",
+      "tickets": "lippu.fi",
+      "category": "Metallica",
+      "WebPage": "https://www.google.fi"
+    },
+    {
+      "id": 1,
+      "artist": "Metallica",
+      "eventname": "Puustock",
+      "img": "google.com",
+      "description": "Dumb",
+      "date" : "10-23-2019",
+      "time": "15:30",
+      "adress": "ratina",
+      "location": "Tampere",
+      "tickets": "lippu.fi",
+      "category": "Metallica",
+      "WebPage": "https://www.google.fi"
+    },
+    {
+      "id": 2,
+      "artist": "Metallica",
+      "eventname": "Puustock",
+      "img": "google.com",
+      "description": "Dumb",
+      "date" : "10-23-2019",
+      "time": "15:30",
+      "adress": "ratina",
+      "location": "Tampere",
+      "tickets": "lippu.fi",
+      "category": "Metallica",
+      "WebPage": "https://www.google.fi"
+    },
+    {
+      "id": 3,
+      "artist": "Metallica",
+      "eventname": "Puustock",
+      "img": "google.com",
+      "description": "Dumb",
+      "date" : "10-23-2019",
+      "time": "15:30",
+      "adress": "ratina",
+      "location": "Vaasa",
+      "tickets": "lippu.fi",
+      "category": "Metallica",
+      "WebPage": "https://www.google.fi"
+    },
+    {
+      "id": 4,
+      "artist": "Metallica",
+      "eventname": "Puustock",
+      "img": "google.com",
+      "description": "Dumb",
+      "date" : "10-23-2019",
+      "time": "15:30",
+      "adress": "ratina",
+      "location": "Oulu",
+      "tickets": "lippu.fi",
+      "category": "Metallica",
+      "WebPage": "https://www.google.fi"
+    },
+    {
+      "id": 5,
+      "artist": "Ed Sheeran",
+      "eventname": "WoodStroke",
+      "img": "google.com",
+      "description": "Another one",
+      "date" : "10-25-2019",
+      "time": "19:30",
+      "adress": "Ratina",
+      "location": "Helsinki",
+      "tickets": "lippu.fi",
+      "category": "Rock",
+      "WebPage": "https://www.google.fi"
+    },
+    {
+      "id": 6,
+      "artist": "Ed Sheeran",
+      "eventname": "WoodStroke",
+      "img": "google.com",
+      "description": "Another one",
+      "date" : "10-25-2019",
+      "time": "19:30",
+      "adress": "Ratina",
+      "location": "Helsinki",
+      "tickets": "lippu.fi",
+      "category": "Rock",
+      "WebPage": "https://www.google.fi"
+    }
+  ]
+}
