@@ -17,7 +17,7 @@ const Navigation = ({items, setPage}) => {
       </Nav>
       <Form inline>
         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-info">Search</Button>
+        <Button variant="outline-info">Search</Button><span style={{width: "5px"}}></span>
         <Button variant="outline-danger" onClick={e => setPage('Manage')}>Manage</Button>
       </Form>
     </Navbar>

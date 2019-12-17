@@ -39,12 +39,24 @@ const filterAsLocation = (data, filter, col) => {
   });
   return filtered;
 }
+const getFuture = data => {
+  let curDate = new Date();
 
+  let newData = [];
+  data.map(d => {
+    let dataDate = new Date(d.date);
+    if(curDate < dataDate) {
+      newData.push(d);
+    }
+  });
+  return newData;
+}
 export default {
   getAll: getAll,
   addGig: addGig,
   updateGig: updateGig,
   removeGig: removeGig,
   getUniques: getUniques,
-  filterAsLocation: filterAsLocation
+  filterAsLocation: filterAsLocation,
+  getFuture: getFuture
 }

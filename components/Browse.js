@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Handler from '../database/handler.js';
 import {Breadcrumb, Container, Col, Row} from 'react-bootstrap';
@@ -6,13 +6,21 @@ import SideNav from './SideNav.js';
 import Content from './Content.js';
 
 const Browse = ({data, filter, setPage}) => {
-  if(data.length === 0)
-    return(<div></div>);
 
-  let newData = data;
+  const [showFuture, setShowFuture] = useState(false);
+  if(data.length === 0)
+    return(
+      <div>
+        <p>There is no gigs!</p>
+      </div>
+    );
+
+  let newData = showFuture ? Handler.getFuture(data) : data;
+
   if(filter !== "Keikat") {
     newData = Handler.filterAsLocation(newData, filter, "location");
   }
+  const locations = Handler.getUniques(data, "location");
   return (
     <div>
       <Breadcrumb>
@@ -25,7 +33,7 @@ const Browse = ({data, filter, setPage}) => {
       <Container fluid={true}>
         <Row>
           <Col xs={3}>
-            <SideNav />
+            <SideNav locations={locations} setPage={setPage} future={setShowFuture}/>
           </Col>
           <Col xs={9}>
             <Content data={newData}/>

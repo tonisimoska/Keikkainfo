@@ -13,12 +13,20 @@ const Manage = ({setPage}) => {
     Handler.getAll().then(
       response => setData(response)
     );
-  }, [data.length]);
+  }, [data]);
 
   const [manage, setManage] = useState();
 
-  const handleManaged = mgn => {
-    if(manage !== undefined) setManage(undefined);
+  const handleManaged = (mgn) => {
+    if(mgn === undefined) {
+      return;
+    }
+    if(manage === undefined) {
+      setManage(mgn);
+      return;
+    }
+    if(manage.id === mgn.id)
+      setManage(undefined);
     else setManage(mgn);
   }
 

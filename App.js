@@ -10,13 +10,13 @@ function App() {
   const title = "Still in development";
   const subtitle = "Something about something";
   const [data, setData] = useState([]);
-  const [page, setPage] = useState("Manage");
+  const [page, setPage] = useState("Home");
 
   useEffect(() => {
     Handler.getAll().then(response => {
     setData(response);
   });
-  }, []);
+}, [data]);
 
   return (
     <div>
